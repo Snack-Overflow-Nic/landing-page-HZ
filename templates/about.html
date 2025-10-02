@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header class="w-full px-6 py-4 flex justify-between items-center shadow-md bg-white sticky top-0 z-50">
+        <nav
+            class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b-2 border-[#0D156B]/10 shadow-sm">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex-shrink-0">
+                        <img alt="Harta-Zone" loading="lazy" width="140" height="60" style="margin-left: 7rem;"
+                            decoding="async" data-nimg="1" class="cursor-pointer"
+                            src="../static/assets/HartazoneLINEA-ColoresOG.svg">
+                    </div>
+                    <div style="margin-right: 7rem;" class="hidden md:flex items-center gap-6">
+                        <a href="/templates/home.html"
+                            class="font-sans font-bold text-[#0D156B] hover:text-[#E6651A] transition-colors text-base">Inicio</a>
+                        <a href="about.html"
+                            class="font-sans font-bold text-[#0D156B] hover:text-[#E6651A] transition-colors text-base">Nosotros</a>
+                        <button data-slot="button"
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-9 has-[&gt;svg]:px-3 bg-[#E6651A] hover:bg-[#d45a15] text-white font-sans font-extrabold px-6 py-2 rounded-full shadow-lg hover:scale-105 transition-transform text-sm">Descargar
+                            App</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+</header> 
+
+<!-- === SECCIÓN AZUL / SOBRE HARTA-ZONE (REEMPLAZO) === -->
+<section id="sobre"
+  class="relative w-full overflow-hidden pt-24 lg:pt-28 min-h-[60vh] md:min-h-[62vh] lg:min-h-[66vh]">
+  
+  <!-- Capa 1: gradiente base -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#0D156B] via-[#14259E] to-[#0D156B]"></div>
+
+  <!-- Capa 2: patrón SVG (denso, no estirado) -->
+  <div class="absolute inset-0 opacity-20 select-none pointer-events-none">
+    <svg class="w-full h-full" viewBox="0 0 1200 700" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <!-- El truco para que NO se estire es usar patternUnits="userSpaceOnUse" y tamaño fijo en px -->
+        <pattern id="hz-pattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+          <!-- puntos grandes y pequeños, ligeramente desalineados para look “aleatorio” -->
+          
+         <circle cx="16" cy="20" r="1.8" fill="#8FA4FF" opacity="0.16"/> 
+          <circle cx="16" cy="20" r="1.8" fill="#A5B4FC"></circle>
+        </pattern>
+
+        <!-- brillo muy suave a la derecha (opcional, como en tu estilo) -->
+        <radialGradient id="hz-glow" cx="85%" cy="45%" r="35%">
+          <stop offset="0%"  stop-color="#FFCD59" stop-opacity="0.18"/>
+          <stop offset="100%" stop-color="#FFCD59" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <!-- relleno con patrón -->
+      <rect width="1200" height="700" fill="url(#hz-pattern)"></rect>
+      <!-- brillo suave -->
+      <rect width="1200" height="700" fill="url(#hz-glow)"></rect>
+    </svg>
+  </div>
+
+  <!-- Contenido -->
+  <div class="relative z-10 container mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <!-- Izquierda: títulos y copy -->
+      <div class="lg:col-span-7 max-w-3xl">
+        <h2 class="font-serif font-black text-white text-5xl md:text-6xl leading-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.35)]">
+          Sobre <span class="text-[#E6651A]">Harta</span><span class="text-[#FFCD59]">-Zone</span>
+        </h2>
+        <p class="mt-6 text-white/95 text-xl md:text-2xl font-sans font-semibold leading-relaxed">
+          Conectando comida de calidad con personas, reduciendo el
+          desperdicio alimentario.
+        </p>
+      </div>
+
+      <!-- Derecha: “hz” grande -->
+      <div class="lg:col-span-5 flex justify-center lg:justify-end">
+        <img
+          src="../static/assets/PERSONAJE HZ_HZ naranja.svg"
+          alt="hz Harta-Zone"
+          class="w-[68%] md:w-[72%] lg:w-[76%] max-w-[560px] min-w-[260px] opacity-95 drop-shadow-[0_25px_60px_rgba(0,0,0,0.35)] select-none pointer-events-none animate-float"
+          loading="eager" decoding="async">
+      </div>
+    </div>
+  </div>
+
+  <!-- Sombra inferior muy sutil para transición -->
+  <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent to-[#0D156B]/10"></div>
+</section>
+<!-- === /SECCIÓN AZUL === -->
+
+
+</body>
+
+</html>
