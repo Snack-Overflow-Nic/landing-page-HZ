@@ -1,1 +1,180 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Harta Zone | Landing Page</title>
+	<!-- Tailwind CSS CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- Custom CSS (opcional) -->
+	<link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body class="bg-white text-gray-900">
+	<!-- Header / Navbar -->
+	<header class="w-full px-6 py-4 flex justify-between items-center shadow-md bg-white sticky top-0 z-50">
+		<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b-2 border-[#0D156B]/10 shadow-sm">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex-shrink-0">
+                        <img alt="Harta-Zone" loading="lazy" width="140" height="60" style="margin-left: 7rem;" decoding="async" data-nimg="1" class="cursor-pointer" src="../static/assets/HartazoneLINEA-ColoresOG.svg">
+                    </div>
+                    <div style="margin-right: 7rem;" class="hidden md:flex items-center gap-6">
+                        <a href="/" class="font-sans font-bold text-[#0D156B] hover:text-[#E6651A] transition-colors text-base">Inicio</a>
+                        <a href="/nosotros" class="font-sans font-bold text-[#0D156B] hover:text-[#E6651A] transition-colors text-base">Nosotros</a>
+                        <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-9 has-[&gt;svg]:px-3 bg-[#E6651A] hover:bg-[#d45a15] text-white font-sans font-extrabold px-6 py-2 rounded-full shadow-lg hover:scale-105 transition-transform text-sm">Descargar App</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+	</header>
+
+	<!-- Hero Section burro -->
+	<section id="inicio" class="relative min-h-screen flex flex-col lg:flex-row items-center justify-center overflow-hidden bg-gradient-to-br from-[#E6651A] via-[#E6651A] to-[#ff7a2e] pt-16" style="min-height:100vh;">
+		<!-- Fondo SVG de patrones decorativos -->
+		<div class="absolute inset-0 w-full h-full opacity-10 z-0 pointer-events-none select-none">
+            <svg class="w-full h-full" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="food-pattern" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+                    <!-- radios aumentados para depuración -->
+                        <circle cx="3" cy="3" r="0.4" fill="#0D156B"></circle>
+                        <circle cx="9" cy="9" r="0.4" fill="#0D156B"></circle>
+                        <circle cx="6" cy="6" r="0.2" fill="#FFCD59"></circle>
+                        <path d="M 5 2 Q 5.5 3 5 4 Q 4.5 3 5 2" fill="#0D156B"></path>
+                        <rect x="8" y="2.5" width="1" height="2.5" rx="0.3" fill="#0D156B"></rect>
+                        <circle cx="2" cy="8" r="0.3" fill="#FFCD59"></circle>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#food-pattern)"/>
+            </svg>
+        </div>
+        
+	    <div class="hero-content-custom z-10 flex flex-col space-y-8 ml-4 md:ml-16 lg:ml-32 max-w-2xl w-full mb-10 lg:mb-0">
+			<h1 class="font-serif text-5xl md:text-6xl font-black leading-[0.95] text-white drop-shadow-2xl">Comida <span class="text-[#FFCD59] drop-shadow-lg">deliciosa</span>,<br>precios <span class="text-[#0D156B] drop-shadow-lg">increíbles</span></h1>
+			<p class="text-xl md:text-2xl text-white leading-relaxed font-sans font-bold drop-shadow-lg">Rescata alimentos de calidad y <span class="text-[#FFCD59] font-extrabold drop-shadow-lg">ahorra hasta un 70%</span></p>
+			<div class="flex flex-col sm:flex-row gap-4 pt-4">
+				<button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap h-10 px-8 py-6 bg-[#0D156B] hover:bg-[#0a1055] text-white font-sans font-extrabold text-base rounded-full shadow-2xl hover:scale-105 transition-transform w-full sm:w-auto max-w-xs">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-apple mr-2 h-5 w-5"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"></path><path d="M10 2c1 .5 2 2 2 5"></path></svg>
+					App Store
+				</button>
+				<button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap h-10 px-8 py-6 bg-white text-[#E6651A] hover:bg-white/90 border-4 border-white font-sans font-extrabold text-base rounded-full shadow-2xl hover:scale-105 transition-transform w-full sm:w-auto max-w-xs">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone mr-2 h-5 w-5"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg>
+					Google Play
+				</button>
+			</div>
+			<div class="flex gap-6 pt-4">
+				<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border-2 border-white/20">
+					<div class="font-serif text-3xl font-black text-[#FFCD59] drop-shadow-lg">50+</div>
+					<div class="text-white font-sans font-bold text-sm drop-shadow-md">Restaurantes</div>
+				</div>
+				<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border-2 border-white/20">
+					<div class="font-serif text-3xl font-black text-[#FFCD59] drop-shadow-lg">1000+</div>
+					<div class="text-white font-sans font-bold text-sm drop-shadow-md">Comidas salvadas</div>
+				</div>
+				<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border-2 border-white/20">
+					<div class="font-serif text-3xl font-black text-[#FFCD59] drop-shadow-lg">70%</div>
+					<div class="text-white font-sans font-bold text-sm drop-shadow-md">Ahorro</div>
+				</div>
+			</div>
+            <div class="absolute bottom-20 left-10 w-20 h-20 bg-[#0D156B] rounded-full opacity-30 blur-xl animate-pulse delay-75"></div>
+		</div>
+	    <div class="flex-1 flex justify-center items-center mt-10 lg:mt-0 mt-0 md:ml-[-16px] lg:ml-[-32px]">
+			<img src="../static/assets/PERSONAJE HZ_hz azul.svg" alt="Hero Image" class="max-w-[460px] min-w-[280px] w-full h-auto animate-float">
+			<div class="absolute top-10 right-10 w-24 h-24 bg-[#FFCD59] rounded-full opacity-30 blur-xl animate-pulse"></div>
+		</div>
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <div class="w-6 h-10 border-2 border-white/70 rounded-full flex items-start justify-center p-2">
+                <div class="w-1.5 h-3 bg-white/70 rounded-full"></div>
+            </div>
+        </div>
+	</section>
+
+    <!-- Context Section -->
+    <section class="py-20 bg-gradient-to-br from-white via-[#E6651A]/5 to-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="font-serif text-4xl md:text-5xl font-black text-[#0D156B] mb-4 text-balance">¿Qué es <span class="text-[#E6651A]">Harta-Zone</span>?</h2>
+                    <p class="text-lg text-[#0D156B] font-sans font-bold leading-relaxed">Una solución innovadora que conecta negocios con consumidores</p>
+                </div>
+                <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border-4 border-[#E6651A]/20 hover:border-[#E6651A] transition-all">
+                    <p class="text-lg text-[#0D156B] font-sans font-semibold leading-relaxed mb-6">Harta-Zone es una <span class="text-[#E6651A] font-bold">plataforma tecnológica y social</span> que responde a dos desafíos críticos en Managua: el <span class="text-[#E6651A] font-bold">desperdicio de alimentos</span> en establecimientos gastronómicos y la <span class="text-[#E6651A] font-bold">inseguridad alimentaria</span> que afecta a la población.</p>
+                    <div class="grid md:grid-cols-2 gap-6 mt-8">
+                        <div class="bg-gradient-to-br from-[#E6651A]/10 to-[#E6651A]/5 rounded-2xl p-6 border-2 border-[#E6651A]/30 hover:border-[#E6651A] transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-10 w-10 text-[#E6651A] mb-3">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <h3 class="font-serif text-xl font-black text-[#0D156B] mb-2">Para Consumidores</h3>
+                            <p class="text-[#0D156B] font-sans font-semibold text-sm leading-relaxed">Estudiantes, trabajadores y familias con ingresos limitados pueden acceder a <span class="font-bold">alimentos de calidad a precios reducidos</span></p>
+                        </div>
+                        <div class="bg-gradient-to-br from-[#0D156B]/10 to-[#0D156B]/5 rounded-2xl p-6 border-2 border-[#0D156B]/30 hover:border-[#0D156B] transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-store h-10 w-10 text-[#0D156B] mb-3">
+                                <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"></path>
+                                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"></path>
+                                <path d="M2 7h20"></path>
+                                <path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"></path>
+                            </svg>
+                            <h3 class="font-serif text-xl font-black text-[#0D156B] mb-2">Para Negocios</h3>
+                            <p class="text-[#0D156B] font-sans font-semibold text-sm leading-relaxed">Restaurantes, cafeterías y panaderías pueden <span class="font-bold">monetizar excedentes y reducir el desperdicio</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- Features Section -->
+	<section id="features" class="w-full py-20 px-6 md:px-24 bg-white">
+		<div class="text-center mb-12">
+            <h2 class="font-serif text-4xl md:text-5xl font-black text-[#0D156B] mb-4 text-balance">¿Cómo <span class="text-[#E6651A]">funciona</span>?</h2>
+            <p class="text-lg text-[#0D156B] max-w-2xl mx-auto font-sans font-bold leading-relaxed">Tres pasos simples para disfrutar comida deliciosa</p>
+        </div>
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+			<div class="flex flex-col items-center text-center gap-4 p-6 rounded-lg shadow hover:shadow-lg transition">
+				<img src="../static/assets/feature1.svg" alt="Feature 1" class="h-16 mb-2">
+				<h3 class="text-xl font-semibold">Conexión Segura</h3>
+				<p class="text-gray-600">Tu información siempre protegida y accesible solo para ti.</p>
+			</div>
+			<div class="flex flex-col items-center text-center gap-4 p-6 rounded-lg shadow hover:shadow-lg transition">
+				<img src="../static/assets/feature2.svg" alt="Feature 2" class="h-16 mb-2">
+				<h3 class="text-xl font-semibold">Interfaz Intuitiva</h3>
+				<p class="text-gray-600">Navega fácilmente y encuentra lo que buscas en segundos.</p>
+			</div>
+			<div class="flex flex-col items-center text-center gap-4 p-6 rounded-lg shadow hover:shadow-lg transition">
+				<img src="../static/assets/feature3.svg" alt="Feature 3" class="h-16 mb-2">
+				<h3 class="text-xl font-semibold">Soporte 24/7</h3>
+				<p class="text-gray-600">Nuestro equipo está siempre listo para ayudarte en lo que necesites.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Call to Action Section -->
+	<section id="cta" class="w-full py-16 px-6 md:px-24 bg-primary text-white text-center rounded-lg my-12">
+		<h2 class="text-3xl md:text-4xl font-bold mb-4">¿Listo para ser parte de Harta Zone?</h2>
+		<p class="text-lg mb-8">Regístrate hoy y comienza a disfrutar de todos nuestros beneficios.</p>
+		<a href="#" class="inline-block px-10 py-3 bg-white text-primary font-semibold rounded-lg shadow hover:bg-gray-100 transition">Crear Cuenta</a>
+	</section>
+
+	<!-- Footer -->
+	<footer class="w-full py-8 px-6 md:px-24 bg-gray-900 text-gray-200 flex flex-col md:flex-row justify-between items-center gap-4">
+		<div class="flex items-center gap-2">
+			<img src="../static/assets/logo.svg" alt="Harta Zone Logo" class="h-8 w-auto">
+			<span class="font-bold text-lg">Harta Zone</span>
+		</div>
+		<div class="text-sm">&copy; 2025 Harta Zone. Todos los derechos reservados.</div>
+		<div class="flex gap-4">
+			<a href="#" class="hover:text-primary"><img src="../static/assets/facebook.svg" alt="Facebook" class="h-6"></a>
+			<a href="#" class="hover:text-primary"><img src="../static/assets/twitter.svg" alt="Twitter" class="h-6"></a>
+			<a href="#" class="hover:text-primary"><img src="../static/assets/instagram.svg" alt="Instagram" class="h-6"></a>
+		</div>
+	</footer>
+
+	<!-- Main JS -->
+	<script src="../static/js/main.js"></script>
+</body>
+</html>
+
