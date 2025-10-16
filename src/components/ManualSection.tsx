@@ -82,7 +82,7 @@ export function ManualSection() {
         >
           <h2 className="text-4xl md:text-5xl text-white mb-4" style={{ fontFamily: 'Brasika' }}>
             ¿Cómo usar{' '}
-            <span className="text-[#FFCD59]">Harta-Zone</span>?
+            <span className="text-[#FFCD59]">HartaZone</span>?
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto" style={{ fontFamily: 'CalpsSans', fontSize:'1.6rem' }}>
             Cuatro pasos simples para disfrutar comida deliciosa, ahorrar dinero y

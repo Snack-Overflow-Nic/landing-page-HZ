@@ -85,7 +85,7 @@ export function BusinessRegistrationModal({ isOpen, onClose }: BusinessRegistrat
                       <h2 className="text-2xl text-white" style={{ fontFamily:'CalpsSans' }}>
                         Contáctanos
                       </h2>
-                      <p className="text-gray-300 text-sm" style={{ fontFamily:'CalpsSansLight', fontSize:'1rem' }}>Únete a Harta-Zone</p>
+                      <p className="text-gray-300 text-sm" style={{ fontFamily:'CalpsSansLight', fontSize:'1rem' }}>Únete a HartaZone</p>
                     </div>
                   </div>
                   
@@ -242,7 +242,7 @@ export function BusinessRegistrationModal({ isOpen, onClose }: BusinessRegistrat
               {/* Footer */}
               <div className="bg-gray-50 px-6 py-4 border-t border-gray-100">
                 <p className="text-xs text-gray-500 text-center" style={{ fontFamily:'CalpsSans', fontSize:'1rem' }}>
-                  Al enviar este formulario, aceptas que Harta-Zone se ponga en contacto contigo.
+                  Al enviar este formulario, aceptas que HartaZone se ponga en contacto contigo.
                 </p>
               </div>
             </motion.div>

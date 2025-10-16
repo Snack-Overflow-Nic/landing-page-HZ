@@ -63,7 +63,7 @@ export function WhySection() {
         >
           <h2 className="text-4xl md:text-5xl text-[#0D156B] mb-4">
             ¿Por qué elegir{' '}
-            <span className="text-[#E6651A]">Harta-Zone</span>?
+            <span className="text-[#E6651A]">HartaZone</span>?
           </h2>
         </motion.div>
 
@@ -129,7 +129,7 @@ export function WhySection() {
             className="inline-block text-[#0D156B] text-xl px-8 py-4 rounded-full glass-morphism-dark bg-gray-50"
             style={{ fontFamily: 'CalpsSans' }}
           >
-            Únete a la revolución contra el desperdicio de alimentos
+            Apoya contra el desperdicio de alimentos
           </motion.p>
         </motion.div>
       </div>

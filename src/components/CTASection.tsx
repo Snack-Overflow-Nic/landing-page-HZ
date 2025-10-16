@@ -52,7 +52,7 @@ export function CTASection() {
               style={{fontFamily:'Brasika' }}
             >
               Descarga{' '}
-              <span className="text-[#E6651A]">Harta-Zone</span> y únete a la
+              <span className="text-[#E6651A]">HartaZone</span> y apoya a la
               revolución contra el{' '}
               <span className="text-[#FFCD59]">desperdicio alimentario</span>
             </motion.h2>
@@ -149,7 +149,7 @@ export function CTASection() {
                     <div className="mb-2 z-10">
                       <ArturitoHH width={160} height={160} />
                     </div>
-                    <p className="text-white text-2xl text-center" style={{ fontFamily:'Brasika' }}>Harta-Zone</p>
+                    <p className="text-white text-2xl text-center" style={{ fontFamily:'Brasika' }}>HartaZone</p>
                     <p className="text-white text-sm mt-2 text-center" style={{ fontFamily:'CalpsSans', fontSize: '1.2rem'}}>
                       Tu app favorita
                     </p>
@@ -216,9 +216,6 @@ export function CTASection() {
           className="mt-16 text-center"
           style={{ fontFamily:'Brasika' }}
         >
-          <p className="text-xl text-gray-700">
-            Únete a miles de usuarios que ya están ahorrando y ayudando al planeta
-          </p>
         </motion.div>
       </div>
 

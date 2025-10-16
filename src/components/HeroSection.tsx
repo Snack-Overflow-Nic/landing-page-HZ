@@ -52,12 +52,12 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="text-5xl md:text-6xl lg:text-7xl leading-tight"
+              className="text-5xl md:text-5xl lg:text-6xl leading-tight"
               style={{ fontFamily: 'Brasika' }}
             >
-              En Hartazone{' '}
-              <span className="text-[#FFCD59]">no se pierde</span>,{' '}
-              <span>se saborea</span>
+              Porque en{' '} 
+              <span className="text-[#FFCD59]">Nicaragua</span>,{' '}
+              <span>la comida se <span className="text-[#FFCD59]">respeta</span></span>
             </motion.h1>
 
             <motion.p

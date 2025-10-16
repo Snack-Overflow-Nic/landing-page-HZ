@@ -22,7 +22,7 @@ export function ProblemSection() {
     },
     {
       icon: CheckCircle,
-      highlightText: 'Harta-Zone actúa',
+      highlightText: 'HartaZone actúa',
       restText: 'Rescatamos alimentos de calidad antes de que se desperdicien',
       color: '#0D156B',
     },

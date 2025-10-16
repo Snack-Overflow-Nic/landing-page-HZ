@@ -99,13 +99,13 @@ export function ForBusinessSection() {
                 className="text-xl text-gray-300"
                 style={{ fontFamily:"CalpsSans" }}
               >
-                Únete a Harta-Zone y transforma tus excedentes en ingresos mientras
+                Únete a HartaZone y transforma tus excedentes en ingresos mientras
                 reduces el desperdicio
               </motion.p>
             </div>
 
             {/* Benefits Grid */}
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 gap-6">
               {benefits.map((benefit, index) => (
                 <motion.div
                   key={index}
@@ -195,8 +195,10 @@ export function ForBusinessSection() {
                   
                 </motion.div>
                 <div className="text-center text-white space-y-2" style={{ fontFamily: 'Brasika' }}>
-                  <p className="text-4xl">100+</p>
-                  <p className="text-xl">Negocios Activos</p>
+                  <p className="text-3xl text-[#0D156B]">
+                    Suma 
+                    <span className='text-[#fff]'> tu negocio</span> 
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -263,7 +265,7 @@ export function ForBusinessSection() {
           style={{ fontFamily:"Brasika" }}
         >
           <p className="text-white text-xl">
-            Únete a los restaurantes, cafeterías y panaderías que ya están marcando la diferencia
+            Restaurantes, cafeterías y panaderías marcan la diferencia con HartaZone
           </p>
         </motion.div>
       </div>
