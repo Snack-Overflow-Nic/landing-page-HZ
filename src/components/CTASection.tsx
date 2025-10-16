@@ -36,13 +36,13 @@ export function CTASection() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left: Main CTA Content */}
-          <motion.div
+            <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
-            className="space-y-8"
+            className="space-y-6"
           >
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -62,13 +62,13 @@ export function CTASection() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="grid grid-cols-3 gap-4"
+              className="grid grid-cols-1 sm:grid-cols-3 gap-4"
             >
               {stats.map((stat, index) => (
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className="glass-morphism-dark bg-white rounded-2xl p-6 text-center shadow-lg border-2 border-gray-100"
+                  className="glass-morphism-dark bg-white rounded-2xl p-4 sm:p-6 text-center shadow-lg border-2 border-gray-100"
                 >
                   <motion.p
                     initial={{ scale: 0 }}
@@ -100,7 +100,7 @@ export function CTASection() {
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: '0 15px 40px rgba(230, 101, 26, 0.3)' }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full sm:w-auto bg-[#E6651A] text-white px-8 py-4 rounded-full flex items-center justify-center gap-3 hover:bg-[#FFCD59] hover:text-[#0D156B] transition-colors duration-300 shadow-xl"
+                className="w-full sm:w-auto bg-[#E6651A] text-white px-6 py-3 rounded-full flex items-center justify-center gap-3 hover:bg-[#FFCD59] hover:text-[#0D156B] transition-colors duration-300 shadow-xl"
               >
                 <Smartphone size={24} />
                 <div className="text-left" style={{ fontFamily:'CalpsSans' }}>
@@ -113,7 +113,7 @@ export function CTASection() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full sm:w-auto glass-morphism-dark bg-white text-[#0D156B] px-8 py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#0D156B] hover:text-white transition-all duration-300 border-2 border-[#0D156B]"
+                className="w-full sm:w-auto glass-morphism-dark bg-white text-[#0D156B] px-6 py-3 rounded-full flex items-center justify-center gap-2 hover:bg-[#0D156B] hover:text-white transition-all duration-300 border-2 border-[#0D156B]"
                 style={{ fontFamily:'CalpsSans' }}
               >
                 <Store size={20} />
@@ -141,13 +141,13 @@ export function CTASection() {
               }}
               className="relative z-10"
             >
-              <div className="bg-gradient-to-br from-[#0D156B] to-[#1a2380] rounded-[3rem] p-4 shadow-2xl lg:w-[20rem] mx-auto">
-                <div className="bg-white rounded-[2.5rem] aspect-[9/16] flex items-center justify-center relative overflow-hidden">
+              <div className="bg-gradient-to-br from-[#0D156B] to-[#1a2380] rounded-[2rem] p-3 shadow-2xl w-[16rem] sm:w-[18rem] md:w-[20rem] mx-auto">
+                <div className="bg-white rounded-[2rem] aspect-[9/16] flex items-center justify-center relative overflow-hidden">
                   {/* Phone screen content */}
                   <div className="absolute inset-0 bg-gradient-to-br from-[#FFCD59] to-[#E6651A] p-6 flex flex-col items-center justify-center">
                     <AnimatedCircles />
                     <div className="mb-2 z-10">
-                      <ArturitoHH width={160} height={160} />
+                      <ArturitoHH width={140} height={140} />
                     </div>
                     <p className="text-white text-2xl text-center" style={{ fontFamily:'Brasika' }}>HartaZone</p>
                     <p className="text-white text-sm mt-2 text-center" style={{ fontFamily:'CalpsSans', fontSize: '1.2rem'}}>
