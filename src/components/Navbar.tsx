@@ -11,10 +11,10 @@ export function Navbar() {
 
   const navItems = [
     { id: 'inicio', label: 'Inicio', href: '#hero' },
+    { id: 'negocios', label: 'Negocios', href: '#negocios' },
     { id: 'nosotros', label: 'Nosotros', href: '#presentacion' },
     { id: 'como-funciona', label: 'Cómo Funciona', href: '#manual' },
     { id: 'soluciones', label: 'Soluciones', href: '#soluciones' },
-    { id: 'negocios', label: 'Negocios', href: '#negocios' },
   ];
 
   useEffect(() => {

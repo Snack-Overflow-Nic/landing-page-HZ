@@ -5,6 +5,7 @@ import { ProblemSection } from './components/ProblemSection';
 import { WhySection } from './components/WhySection';
 import { ManualSection } from './components/ManualSection';
 import { SolutionSection } from './components/SolutionSection';
+import { TestimonialsMetricsSection } from './components/TestimonialsMetricsSection';
 import { ForBusinessSection } from './components/ForBusinessSection';
 import { CTASection } from './components/CTASection';
 import { Footer } from './components/Footer';
@@ -14,12 +15,13 @@ export default function App() {
     <div className="min-h-screen">
       <Navbar />
       <HeroSection />
+      <ForBusinessSection />
       <PresentationSection />
       <ProblemSection />
       <WhySection />
       <ManualSection />
       <SolutionSection />
-      <ForBusinessSection />
+      <TestimonialsMetricsSection />
       <CTASection />
       <Footer />
     </div>
