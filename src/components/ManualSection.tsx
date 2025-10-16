@@ -1,9 +1,15 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, ShoppingBag, Clock, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { AuroraBackground } from './backgrounds/AuroraBackground';
+import {
+  IconSearch,
+  IconShoppingBag,
+  IconClock,
+  IconSparkles
+} from './static/icons/Icons_HZ';
 
 export function ManualSection() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -12,35 +18,31 @@ export function ManualSection() {
 
   const steps = [
     {
-      icon: Search,
+      icon: IconSearch,
       title: 'Descubre ofertas cerca de ti',
       description:
         'Encuentra tu restaurante favorito, filtra por tipo de comida, distancia y precio',
-      color: '#FFCD59',
-      emoji: '🔍',
+      color: '#E6651A',
     },
     {
-      icon: ShoppingBag,
+      icon: IconShoppingBag,
       title: 'Reserva tu pack o plato',
       description: 'Elige y reserva entre packs sorpresa u ofertas específicas',
       color: '#E6651A',
-      emoji: '🛒',
     },
     {
-      icon: Clock,
+      icon: IconClock,
       title: 'Recoge en el horario indicado',
       description:
         'Al momento de retirar en el lugar de la reserva, muestra tu código de seguridad y saborea tu retiro.',
-      color: '#FFCD59',
-      emoji: '⏰',
+      color: '#E6651A',
     },
     {
-      icon: Sparkles,
+      icon: IconSparkles,
       title: 'Disfruta y ayuda al planeta',
       description:
         '¡A disfrutar tu comida! Has ahorrado dinero, probado algo delicioso y contribuido a reducir el desperdicio alimentario.',
       color: '#E6651A',
-      emoji: '✨',
     },
   ];
 
@@ -51,6 +53,8 @@ export function ManualSection() {
   const prevStep = () => {
     setCurrentStep((prev) => (prev - 1 + steps.length) % steps.length);
   };
+
+  const CurrentIcon = steps[currentStep].icon;
 
   return (
     <section
@@ -137,9 +141,7 @@ export function ManualSection() {
                           className="w-40 h-40 rounded-full flex items-center justify-center shadow-2xl"
                           style={{ backgroundColor: steps[currentStep].color }}
                         >
-                          <span className="text-7xl">
-                            {steps[currentStep].emoji}
-                          </span>
+                          <CurrentIcon width={84} height={84} className="text-[#fff]" />
                         </div>
                         {/* Step Number Badge */}
                         <motion.div
@@ -182,7 +184,7 @@ export function ManualSection() {
               whileHover={{ scale: 1.1, x: -5 }}
               whileTap={{ scale: 0.9 }}
               onClick={prevStep}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-[#FFCD59] transition-colors duration-300"
+              className="absolute left-0 top-1/2  w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-[#FFCD59] transition-colors duration-300"
             >
               <ChevronLeft size={24} className="text-[#0D156B]" />
             </motion.button>
@@ -191,7 +193,7 @@ export function ManualSection() {
               whileHover={{ scale: 1.1, x: 5 }}
               whileTap={{ scale: 0.9 }}
               onClick={nextStep}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-[#FFCD59] transition-colors duration-300"
+              className="absolute right-0 top-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-[#FFCD59] transition-colors duration-300"
             >
               <ChevronRight size={24} className="text-[#0D156B]" />
             </motion.button>
@@ -215,7 +217,10 @@ export function ManualSection() {
                     : 'glass-morphism text-white hover:bg-white hover:bg-opacity-20'
                 }`}
               >
-                <step.icon size={20} className="mx-auto mb-1" />
+                {(() => {
+                  const Icon = step.icon;
+                  return <Icon width={20} height={20} className="mx-auto mb-1" />;
+                })()}
                 <p className="text-xs hidden md:block" style={{ fontFamily:'CalpsSans' }}>{step.title.split(' ')[0]}</p>
               </motion.button>
             ))}

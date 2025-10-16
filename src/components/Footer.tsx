@@ -13,7 +13,7 @@ export function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Facebook, label: 'Facebook', href: '#' },
+    { icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/share/16v9tS6rgw/' },
     { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/somoshartazone?igsh=N3VubzFrOTczNHZq' },
     { 
       icon: () => (
