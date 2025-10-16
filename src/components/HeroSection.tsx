@@ -10,7 +10,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-animated-bg"
+      className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center overflow-hidden gradient-animated-bg"
     >
       <WaveBackground />
       {/* Animated Background Elements */}
@@ -52,7 +52,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="text-5xl md:text-5xl lg:text-6xl leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
               style={{ fontFamily: 'Brasika' }}
             >
               Porque en{' '} 
@@ -64,7 +64,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="text-xl md:text-2xl text-gray-200"
+              className="text-base sm:text-lg md:text-xl text-gray-200"
               style={{ fontFamily: 'CalpsSans' }}
             >
               Conectamos restaurantes con consumidores para rescatar alimentos de
@@ -80,7 +80,7 @@ export function HeroSection() {
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(255, 205, 89, 0.3)' }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#FFCD59] text-[#0D156B] px-8 py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#E6651A] hover:text-white transition-colors duration-300"
+                className="bg-[#FFCD59] text-[#0D156B] w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#E6651A] hover:text-white transition-colors duration-300"
                 style={{ fontFamily: 'CalpsSans' }}
               >
                 <Download size={20} />
@@ -90,7 +90,7 @@ export function HeroSection() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="glass-morphism text-white px-8 py-4 rounded-full flex items-center justify-center gap-2 hover:bg-white hover:text-[#0D156B] transition-all duration-300"
+                className="glass-morphism text-white w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center justify-center gap-2 hover:bg-white hover:text-[#0D156B] transition-all duration-300"
                 style={{ fontFamily: 'CalpsSans' }}
               >
                 <Store size={20} />
@@ -112,11 +112,11 @@ export function HeroSection() {
               className="relative z-10"
             >
               {/* Placeholder for hero image/illustration */}
-              <div className="glass-morphism rounded-3xl p-8 aspect-square flex items-center justify-center max-w-[30rem] mx-auto">
+              <div className="glass-morphism rounded-3xl p-6 flex items-center justify-center mx-auto w-full max-w-[20rem] sm:max-w-[24rem] md:max-w-[30rem]">
                 <div className="w-full h-full bg-gradient-to-br from-[#E6651A] to-[#FFCD59] rounded-2xl flex items-center justify-center p-4 relative overflow-hidden">
                   <AnimatedCircles />
                   <div className="relative z-10">
-                    <HartaZoneText width={280} height={280} />
+                    <HartaZoneText width={220} height={220} />
                   </div>
                 </div>
               </div>

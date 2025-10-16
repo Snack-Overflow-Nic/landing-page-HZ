@@ -72,7 +72,7 @@ export function ForBusinessSection() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left: Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -105,7 +105,7 @@ export function ForBusinessSection() {
             </div>
 
             {/* Benefits Grid */}
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {benefits.map((benefit, index) => (
                 <motion.div
                   key={index}
@@ -149,7 +149,7 @@ export function ForBusinessSection() {
               whileHover={{ scale: 1.05, boxShadow: '0 15px 40px rgba(255, 205, 89, 0.4)' }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsModalOpen(true)}
-              className="bg-[#FFCD59] text-[#0D156B] px-10 py-4 rounded-full flex items-center gap-2 hover:bg-[#E6651A] hover:text-white transition-colors duration-300 shadow-xl"
+              className="bg-[#FFCD59] text-[#0D156B] w-full sm:w-auto px-6 py-3 sm:px-10 sm:py-4 rounded-full flex items-center gap-2 hover:bg-[#E6651A] hover:text-white transition-colors duration-300 shadow-xl"
             >
               <MailCheckIcon size={20} />
               <span className="text-lg" style={{ fontFamily:"CalpsSans" }}>Contactanos</span>
@@ -189,9 +189,9 @@ export function ForBusinessSection() {
               className="relative z-10"
                 >
                     
-                    <div className="w-full h-full flex items-center justify-center p-6">
-                      <ArturitoCell width={350} height={280} />
-                    </div>
+                        <div className="w-full h-full flex items-center justify-center p-4">
+                          <ArturitoCell width={220} height={180} />
+                        </div>
                   
                 </motion.div>
                 <div className="text-center text-white space-y-2" style={{ fontFamily: 'Brasika' }}>
