@@ -82,10 +82,10 @@ export function BusinessRegistrationModal({ isOpen, onClose }: BusinessRegistrat
                       <Store className="text-[#0D156B]" size={24} />
                     </motion.div>
                     <div>
-                      <h2 className="text-2xl text-white">
-                        Registra tu Negocio
+                      <h2 className="text-2xl text-white" style={{ fontFamily:'CalpsSans' }}>
+                        Contáctanos
                       </h2>
-                      <p className="text-gray-300 text-sm">Únete a Harta-Zone</p>
+                      <p className="text-gray-300 text-sm" style={{ fontFamily:'CalpsSansLight', fontSize:'1rem' }}>Únete a Harta-Zone</p>
                     </div>
                   </div>
                   
@@ -110,7 +110,7 @@ export function BusinessRegistrationModal({ isOpen, onClose }: BusinessRegistrat
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.1 }}
                     >
-                      <label htmlFor="nombre" className="block text-sm mb-2 text-[#0D156B]">
+                      <label htmlFor="nombre" className="block text-sm mb-2 text-[#0D156B]" style={{ fontFamily:'CalpsSans', fontSize:'1.1rem' }}>
                         Nombre del Negocio
                       </label>
                       <div className="relative">
@@ -124,6 +124,7 @@ export function BusinessRegistrationModal({ isOpen, onClose }: BusinessRegistrat
                           required
                           className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#FFCD59] focus:outline-none transition-colors duration-200"
                           placeholder="Ej: Restaurante La Esquina"
+                          style={{ fontFamily:'CalpsSansLight' }}
                         />
                       </div>
                     </motion.div>
@@ -134,7 +135,7 @@ export function BusinessRegistrationModal({ isOpen, onClose }: BusinessRegistrat
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.2 }}
                     >
-                      <label htmlFor="correo" className="block text-sm mb-2 text-[#0D156B]">
+                      <label htmlFor="correo" className="block text-sm mb-2 text-[#0D156B]" style={{ fontFamily:'CalpsSans', fontSize:'1.1rem' }}>
                         Correo Electrónico
                       </label>
                       <div className="relative">
@@ -148,6 +149,7 @@ export function BusinessRegistrationModal({ isOpen, onClose }: BusinessRegistrat
                           required
                           className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#FFCD59] focus:outline-none transition-colors duration-200"
                           placeholder="negocio@ejemplo.com"
+                          style={{ fontFamily:'CalpsSansLight'}}
                         />
                       </div>
                     </motion.div>
@@ -158,7 +160,7 @@ export function BusinessRegistrationModal({ isOpen, onClose }: BusinessRegistrat
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.3 }}
                     >
-                      <label htmlFor="mensaje" className="block text-sm mb-2 text-[#0D156B]">
+                      <label htmlFor="mensaje" className="block text-sm mb-2 text-[#0D156B]" style={{ fontFamily:'CalpsSans', fontSize:'1.1rem' }}>
                         Mensaje
                       </label>
                       <div className="relative">
@@ -172,6 +174,7 @@ export function BusinessRegistrationModal({ isOpen, onClose }: BusinessRegistrat
                           rows={4}
                           className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#FFCD59] focus:outline-none transition-colors duration-200 resize-none"
                           placeholder="Cuéntanos sobre tu negocio..."
+                          style={{ fontFamily:'CalpsSansLight' }}
                         />
                       </div>
                     </motion.div>
@@ -186,6 +189,7 @@ export function BusinessRegistrationModal({ isOpen, onClose }: BusinessRegistrat
                       type="submit"
                       disabled={isSubmitting}
                       className="w-full bg-gradient-to-r from-[#E6651A] to-[#FFCD59] text-white py-3 rounded-xl hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                      style={{ fontFamily:'CalpsSans'}}
                     >
                       {isSubmitting ? (
                         <>
@@ -229,15 +233,15 @@ export function BusinessRegistrationModal({ isOpen, onClose }: BusinessRegistrat
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </motion.svg>
                     </motion.div>
-                    <h3 className="text-2xl text-[#0D156B] mb-2">¡Solicitud Enviada!</h3>
-                    <p className="text-gray-600">Nos pondremos en contacto contigo pronto.</p>
+                    <h3 className="text-2xl text-[#0D156B] mb-2" style={{ fontFamily:'CalpsSans' }}>¡Solicitud Enviada!</h3>
+                    <p className="text-gray-600" style={{ fontFamily:'CalpsSansLight' }}>Nos pondremos en contacto contigo pronto.</p>
                   </motion.div>
                 )}
               </div>
 
               {/* Footer */}
               <div className="bg-gray-50 px-6 py-4 border-t border-gray-100">
-                <p className="text-xs text-gray-500 text-center">
+                <p className="text-xs text-gray-500 text-center" style={{ fontFamily:'CalpsSans', fontSize:'1rem' }}>
                   Al enviar este formulario, aceptas que Harta-Zone se ponga en contacto contigo.
                 </p>
               </div>

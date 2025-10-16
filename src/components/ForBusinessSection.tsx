@@ -105,7 +105,7 @@ export function ForBusinessSection() {
             </div>
 
             {/* Benefits Grid */}
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               {benefits.map((benefit, index) => (
                 <motion.div
                   key={index}
