@@ -88,14 +88,18 @@ export function Navbar() {
           </div>
 
           {/* CTA Button */}
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="hidden md:block bg-[#FFCD59] text-[#0D156B] px-6 py-2 rounded-full hover:bg-[#E6651A] hover:text-white transition-colors duration-300"
-            style ={{ fontFamily: 'CalpsSans' }}
-          >
-            Descargar App
-          </motion.button>
+          <a href="https://drive.google.com/file/d/1n_CdIqK-XV4wPskb0fIMjnW8SV8ApmTI/view?usp=sharing" target="_blank">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="hidden md:block bg-[#FFCD59] text-[#0D156B] px-6 py-2 rounded-full hover:bg-[#E6651A] hover:text-white transition-colors duration-300"
+              style ={{ fontFamily: 'CalpsSans' }}
+            >
+            
+              Descargar App
+            </motion.button>
+          </a>
+          
 
           {/* Mobile Menu Button */}
           <button

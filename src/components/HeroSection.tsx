@@ -77,15 +77,18 @@ export function HeroSection() {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="flex flex-col sm:flex-row gap-4 pt-4"
             >
-              <motion.button
-                whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(255, 205, 89, 0.3)' }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-[#FFCD59] text-[#0D156B] w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#E6651A] hover:text-white transition-colors duration-300"
-                style={{ fontFamily: 'CalpsSans' }}
-              >
-                <Download size={20} />
-                Descarga la App
-              </motion.button>
+              <a href="https://drive.google.com/file/d/1n_CdIqK-XV4wPskb0fIMjnW8SV8ApmTI/view?usp=sharing" target="_blank">
+                <motion.button
+                  whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(255, 205, 89, 0.3)' }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-[#FFCD59] text-[#0D156B] w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#E6651A] hover:text-white transition-colors duration-300"
+                  style={{ fontFamily: 'CalpsSans' }}
+                >
+                  <Download size={20} />
+                  Descarga la App
+                </motion.button>
+              </a>
+              
 
               <a href="#negocios">
                 <motion.button
