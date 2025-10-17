@@ -58,7 +58,7 @@ export function PresentationSection() {
             className="text-lg md:text-xl text-gray-700"
             style={{ fontFamily:'CalpsSansLight', fontSize: '1.5rem' }}
           >
-            HartaZone es una plataforma tecnológica y social que responde a dos
+            Hartazone es una plataforma tecnológica y social que responde a dos
             desafíos críticos en Managua: el desperdicio de alimentos en
             establecimientos gastronómicos y la inseguridad alimentaria que afecta a
             la población.

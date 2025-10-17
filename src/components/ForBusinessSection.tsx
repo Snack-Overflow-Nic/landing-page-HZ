@@ -99,7 +99,7 @@ export function ForBusinessSection() {
                 className="text-xl text-gray-300"
                 style={{ fontFamily:"CalpsSans" }}
               >
-                Únete a HartaZone y transforma tus excedentes en ingresos mientras
+                Únete a Hartazone y transforma tus excedentes en ingresos mientras
                 reduces el desperdicio
               </motion.p>
             </div>
@@ -265,7 +265,7 @@ export function ForBusinessSection() {
           style={{ fontFamily:"Brasika" }}
         >
           <p className="text-white text-xl">
-            Restaurantes, cafeterías y panaderías marcan la diferencia con HartaZone
+            Restaurantes, cafeterías y panaderías marcan la diferencia con Hartazone
           </p>
         </motion.div>
       </div>

@@ -63,7 +63,7 @@ export function WhySection() {
         >
           <h2 className="text-4xl md:text-5xl text-[#0D156B] mb-4">
             ¿Por qué elegir{' '}
-            <span className="text-[#E6651A]">HartaZone</span>?
+            <span className="text-[#E6651A]">Hartazone</span>?
           </h2>
         </motion.div>
 

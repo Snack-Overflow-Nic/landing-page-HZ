@@ -138,7 +138,7 @@ export function CTASection() {
                     <div className="mb-2 z-10">
                       <ArturitoHH width={140} height={140} />
                     </div>
-                    <p className="text-white text-2xl text-center" style={{ fontFamily:'Brasika' }}>HartaZone</p>
+                    <p className="text-white text-2xl text-center" style={{ fontFamily:'Brasika' }}>Hartazone</p>
                     <p className="text-white text-sm mt-2 text-center" style={{ fontFamily:'CalpsSans', fontSize: '1.2rem'}}>
                       Tu app favorita
                     </p>
