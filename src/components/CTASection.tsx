@@ -1,16 +1,29 @@
-import { motion } from 'framer-motion';
-import { Download, Store, Smartphone } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { Smartphone } from 'lucide-react';
 import { useInView } from 'framer-motion';
-import { useRef } from 'react';
-import { ArturitoHH } from './static/icons/ArturitoH';
+import { useEffect, useRef, useState } from 'react';
 import { ArturitoGesto1 } from './static/icons/Icons_HZ';
 import { HzNaranja } from './static/icons/Icons_HZ';
 import { ArturitoGesto2 } from './static/icons/Icons_HZ';
-import { AnimatedCircles } from './backgrounds/AnimatedCircles';
+import screenshot1 from './static/assets/i1.webp';
+import screenshot2 from './static/assets/i2.webp';
+import screenshot3 from './static/assets/i3.webp';
+import screenshot4 from './static/assets/i4.webp';
+
+const screenshots = [screenshot1, screenshot2, screenshot3, screenshot4];
 
 export function CTASection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const [currentScreenshot, setCurrentScreenshot] = useState(0);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setCurrentScreenshot((prev) => (prev + 1) % screenshots.length);
+    }, 4000);
+
+    return () => window.clearInterval(timer);
+  }, []);
 
   const stats = [
     { value: '50%+', label: 'Ahorro' },
@@ -130,21 +143,34 @@ export function CTASection() {
               }}
               className="relative z-10"
             >
-              <div className="bg-gradient-to-br from-[#0D156B] to-[#1a2380] rounded-[2rem] p-3 shadow-2xl w-[16rem] sm:w-[18rem] md:w-[20rem] mx-auto">
-                <div className="bg-white rounded-[2rem] aspect-[9/16] flex items-center justify-center relative overflow-hidden">
+              <div className="bg-gradient-to-br from-[#0D156B] to-[#1a2380] rounded-[2rem] p-3 shadow-2xl w-[18rem] sm:w-[20rem] md:w-[22rem] mx-auto">
+                <div className="bg-white rounded-[2rem] aspect-[9/16] relative overflow-hidden">
                   {/* Phone screen content */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#FFCD59] to-[#E6651A] p-6 flex flex-col items-center justify-center">
-                    <AnimatedCircles />
-                    <div className="mb-2 z-10">
-                      <ArturitoHH width={140} height={140} />
-                    </div>
-                    <p className="text-white text-2xl text-center" style={{ fontFamily:'Brasika' }}>Hartazone</p>
-                    <p className="text-white text-sm mt-2 text-center" style={{ fontFamily:'CalpsSans', fontSize: '1.2rem'}}>
-                      Tu app favorita
-                    </p>
+                  <div className="absolute inset-0 rounded-[1.75rem] overflow-hidden">
+                    <AnimatePresence mode="wait">
+                      <motion.img
+                        key={screenshots[currentScreenshot]}
+                        src={screenshots[currentScreenshot]}
+                        alt="Vista previa de HartaZone"
+                        className="h-full w-full object-cover"
+                        initial={{ opacity: 0, scale: 1.05 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.95 }}
+                        transition={{ duration: 0.8, ease: 'easeInOut' }}
+                      />
+                    </AnimatePresence>
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-white/10" />
                   </div>
-                  {/* Notch */}
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/2 h-6 bg-[#0D156B] rounded-b-3xl z-20" />
+                  <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2 z-20">
+                    {screenshots.map((_, index) => (
+                      <span
+                        key={index}
+                        className={`h-1.5 w-6 rounded-full transition-all duration-500 ${
+                          index === currentScreenshot ? 'bg-white/90' : 'bg-white/40'
+                        }`}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             </motion.div>
