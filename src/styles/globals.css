@@ -322,8 +322,8 @@
     #0D156B 0%,
     #1a2380 25%,
     #E6651A 50%,
-    #FFCD59 75%,
-    #0D156B 100%
+    #0D156B 75%,
+    #1a2380 100%
   );
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
