@@ -87,15 +87,18 @@ export function HeroSection() {
                 Descarga la App
               </motion.button>
 
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="glass-morphism text-white w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center justify-center gap-2 hover:bg-white hover:text-[#0D156B] transition-all duration-300"
-                style={{ fontFamily: 'CalpsSans' }}
-              >
-                <Store size={20} />
-                Registra tu Negocio
-              </motion.button>
+              <a href="#negocios">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="glass-morphism text-white w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center justify-center gap-2 hover:bg-white hover:text-[#0D156B] transition-all duration-300"
+                  style={{ fontFamily: 'CalpsSans' }}
+                >
+                  <Store size={20} />
+                  Registra tu Negocio
+                </motion.button>
+              </a>
+              
             </motion.div>
           </motion.div>
 

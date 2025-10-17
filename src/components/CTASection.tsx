@@ -108,17 +108,6 @@ export function CTASection() {
                   <p className="text-lg">Google Play</p>
                 </div>
               </motion.button>
-
-              {/* Register Business Button */}
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full sm:w-auto glass-morphism-dark bg-white text-[#0D156B] px-6 py-3 rounded-full flex items-center justify-center gap-2 hover:bg-[#0D156B] hover:text-white transition-all duration-300 border-2 border-[#0D156B]"
-                style={{ fontFamily:'CalpsSans' }}
-              >
-                <Store size={20} />
-                Registra tu Negocio
-              </motion.button>
             </motion.div>
           </motion.div>
 
